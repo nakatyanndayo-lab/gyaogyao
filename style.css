@@ -1,8 +1,68 @@
 body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(#fff7e6, #ffe2e2);
+  font-family: "Rounded Mplus 1c", "Hiragino Maru Gothic ProN", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #ffffffcc;
+  border-radius: 24px;
+  padding: 24px 32px 32px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   text-align: center;
-  font-family: sans-serif;
+  max-width: 360px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.4em;
+  color: #ff7a7a;
 }
 
 img {
-  width: 300px;
+  width: 260px;
+  margin: 12px 0;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+img:active {
+  transform: scale(0.95);
+}
+
+#status {
+  font-size: 1.1em;
+  margin-top: 8px;
+  color: #666;
+}
+
+/* 管理画面用 */
+input, button {
+  margin: 6px 0;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1em;
+}
+
+input {
+  background: #f5f5f5;
+}
+
+button {
+  background: #ff9aa2;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff7a7a;
 }
