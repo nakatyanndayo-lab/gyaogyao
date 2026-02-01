@@ -8,24 +8,25 @@
 <body>
 <div class="container">
   <div class="window">
-  <div class="ribbon"></div>
 
-  <div class="window-frame">
-    <div class="window-top"></div>
+    <div class="window-wrap">
+      <!-- ざうるす（後ろ） -->
+      <img
+        id="zaurus"
+        src="zaurus.png"
+        alt="ざうるす"
+        onclick="pokeZaurus()"
+      />
 
-    <img
-      id="zaurus"
-      src=""
-      alt="ざうるす"
-      onclick="pokeZaurus()"
-    />
+      <!-- 窓PNG（前） -->
+      <img
+        src="イラスト12.png"
+        class="window-png"
+        alt="窓"
+      />
+    </div>
+
+    <p id="status"></p>
+
   </div>
-
-  <p id="status"></p>
 </div>
-
-  <script src="script.js"></script>
-</body>
-
-</html>
-
