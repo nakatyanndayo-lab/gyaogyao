@@ -28,10 +28,10 @@ body {
 /* ざうるす（前へ！） */
 #zaurus {
   position: absolute;
-  bottom: 60px;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
-  width: 260px;
+  width: 320px;
   cursor: pointer;
   transition: transform 0.15s ease;
   /* ↓ ここを変更しました。窓(2)より大きい数字にします */
@@ -51,3 +51,4 @@ body {
   color: #666;
   font-weight: bold;
 }
+
