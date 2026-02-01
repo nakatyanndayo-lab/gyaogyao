@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>管理画面</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>運動入力</h1>
+
+  <input type="password" id="password" placeholder="パスワード">
+  <button onclick="login()">ログイン</button>
+
+  <div id="adminArea" style="display:none;">
+    <input type="number" id="minutes" placeholder="運動時間（分）">
+    <input type="number" id="steps" placeholder="歩数">
+    <button onclick="saveData()">保存</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
