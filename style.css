@@ -19,7 +19,7 @@ body {
 
 /* 窓PNG（後ろへ） */
 .window-png {
-  width: 100%;
+  width: 200%;
   position: relative;
   z-index: 1; /* ざうるすより後ろ */
   pointer-events: none;
@@ -28,10 +28,10 @@ body {
 /* ざうるす（前へ！） */
 #zaurus {
   position: absolute;
-  bottom: 0px;
-  left: 50%;
+  bottom:0px;
+  left: 100%;
   transform: translateX(-50%);
-  width: 320px;
+  width: 640px;
   cursor: pointer;
   transition: transform 0.15s ease;
   /* ↓ ここを変更しました。窓(2)より大きい数字にします */
@@ -51,4 +51,5 @@ body {
   color: #666;
   font-weight: bold;
 }
+
 
