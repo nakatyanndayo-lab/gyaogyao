@@ -14,12 +14,12 @@ body {
 
 .window-wrap {
   position: relative;
-  width: 320px;
+  width: 640px;
 }
 
 /* 窓PNG（後ろへ） */
 .window-png {
-  width: 200%;
+  width: 100%;
   position: relative;
   z-index: 1; /* ざうるすより後ろ */
   pointer-events: none;
@@ -29,7 +29,7 @@ body {
 #zaurus {
   position: absolute;
   bottom:0px;
-  left: 100%;
+  left: 50%;
   transform: translateX(-50%);
   width: 640px;
   cursor: pointer;
@@ -51,5 +51,3 @@ body {
   color: #666;
   font-weight: bold;
 }
-
-
