@@ -14,26 +14,28 @@ body {
 
 .window-wrap {
   position: relative;
-  width: 320px; /* 窓PNGの実サイズに合わせる */
+  width: 320px;
 }
 
-/* 窓PNG */
+/* 窓PNG（後ろへ） */
 .window-png {
   width: 100%;
   position: relative;
-  z-index: 2;
-  pointer-events: none; /* ざうるすをクリックできるように */
+  z-index: 1; /* ざうるすより後ろ */
+  pointer-events: none;
 }
 
-/* ざうるす */
+/* ざうるす（前へ！） */
 #zaurus {
   position: absolute;
-  bottom: -10px;
+  bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
   width: 260px;
   cursor: pointer;
   transition: transform 0.15s ease;
+  /* ↓ ここを変更しました。窓(2)より大きい数字にします */
+  z-index: 2;
 }
 
 #zaurus:hover {
@@ -47,5 +49,5 @@ body {
 #status {
   margin-top: 12px;
   color: #666;
+  font-weight: bold;
 }
-
